@@ -7,10 +7,11 @@ import java.util.List;
  * This is intentionally a single-file implementation (no interfaces/abstract
  * hierarchy) to match the assignment directions.
  */
-public class MechanicalSystemDemo {
-
+public final class MechanicalSystemDemo {
+    /**
+    *Prevent instantiation of this utility class.
+    */
     private MechanicalSystemDemo() {
-        // Prevent instantiation of this utility class.
     }
 
     /**
