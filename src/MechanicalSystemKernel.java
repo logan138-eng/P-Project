@@ -14,7 +14,7 @@
  * position = (0.0, 0.0) and
  * velocity = (0.0, 0.0) and
  * forces = {}
- *            </pre> 你好
+ *            </pre>
  */
 public interface MechanicalSystemKernel {
 
