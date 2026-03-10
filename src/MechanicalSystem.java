@@ -60,4 +60,5 @@ public interface MechanicalSystem extends MechanicalSystemKernel {
      * @ensures velocity = this.velocity
      */
     Vector getVelocity();
+
 }
