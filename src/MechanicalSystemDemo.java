@@ -9,6 +9,10 @@ import java.util.List;
  */
 public class MechanicalSystemDemo {
 
+    private MechanicalSystemDemo() {
+        // Prevent instantiation of this utility class.
+    }
+
     /**
      * Simple 2D vector for position/velocity/force. (Not java.util.Vector; this
      * is a math/physics vector.)
