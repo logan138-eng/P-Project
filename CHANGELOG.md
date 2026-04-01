@@ -6,12 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2026.04.01
 
 ### Added
 
-- Designed kernel and enhanced interfaces for MechanicalSystem component
+- MechanicalSystemSecondry and Vector2D Files
 
 ### Updated
 
-- Nothing change
+- Implemented MechanicalSystem component design
+- Added kernel methods for setting mass, position, velocity, and forces
+- Implemented secondary methods: acceleration, step, kineticEnergy, and isAtRest
+- Ensured design follows classical mechanics principles

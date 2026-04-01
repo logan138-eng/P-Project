@@ -77,4 +77,37 @@ public interface MechanicalSystemKernel {
      * @ensures this is in the initial state
      */
     void reset();
+
+    /**
+     * Reports the mass of this system.
+     *
+     * @return the mass
+     * @ensures mass = this.mass
+     */
+    double getMass();
+
+    /**
+     * Reports the current position of this system.
+     *
+     * @return the position
+     * @ensures position = this.position
+     */
+    Vector getPosition();
+
+    /**
+     * Reports the current velocity of this system.
+     *
+     * @return the velocity
+     * @ensures velocity = this.velocity
+     */
+    Vector getVelocity();
+
+    /**
+     * Reports the net force currently applied to this system.
+     *
+     * @return the sum of all applied forces
+     * @ensures netForce = sum of this.forces
+     */
+    Vector getNetForce();
+
 }
