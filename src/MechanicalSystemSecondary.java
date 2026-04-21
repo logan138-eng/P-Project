@@ -94,4 +94,6 @@ public abstract class MechanicalSystemSecondary implements MechanicalSystem {
     public boolean isAtRest() {
         return magnitude(this.getVelocity()) < REST_EPSILON;
     }
+
+
 }

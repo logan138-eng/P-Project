@@ -28,6 +28,14 @@ I started to play violin and soccer when I was admitted to university as well. M
 
     - void reset()
 
+    - double getMass()
+
+    - Vector getPosition()
+
+    - Vector getVelocity()
+
+    - Vector getNetForce()
+
   - **Secondary Methods**:
     - Vector acceleration()
 

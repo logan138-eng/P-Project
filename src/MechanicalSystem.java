@@ -45,19 +45,4 @@ public interface MechanicalSystem extends MechanicalSystemKernel {
      */
     boolean isAtRest();
 
-    /**
-     * Reports the current position of this system.
-     *
-     * @return the current position
-     * @ensures position = this.position
-     */
-    Vector getPosition();
-
-    /**
-     * Reports the current velocity of this system.
-     *
-     * @return the current velocity
-     * @ensures velocity = this.velocity
-     */
-    Vector getVelocity();
 }
