@@ -1,3 +1,6 @@
+
+import components.standard.Standard;
+
 /**
  * Kernel interface for {@code MechanicalSystem}.
  *
@@ -16,7 +19,7 @@
  * forces = {}
  *            </pre>
  */
-public interface MechanicalSystemKernel {
+public interface MechanicalSystemKernel extends Standard<MechanicalSystem> {
 
     /**
      * Sets the mass of this system to {@code m}.

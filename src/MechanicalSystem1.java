@@ -138,6 +138,8 @@ public final class MechanicalSystem1 extends MechanicalSystemSecondary {
         return this.netForce;
     }
 
+    // TODO: move these to secondary
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -174,6 +176,26 @@ public final class MechanicalSystem1 extends MechanicalSystemSecondary {
         return "MechanicalSystem1[mass=" + this.mass + ", position="
                 + this.position + ", velocity=" + this.velocity + ", netForce="
                 + this.netForce + "]";
+    }
+
+    @Override
+    public void clear() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+    }
+
+    @Override
+    public MechanicalSystem newInstance() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'newInstance'");
+    }
+
+    @Override
+    public void transferFrom(MechanicalSystem arg0) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'transferFrom'");
     }
 
 }

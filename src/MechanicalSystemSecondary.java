@@ -95,5 +95,44 @@ public abstract class MechanicalSystemSecondary implements MechanicalSystem {
         return magnitude(this.getVelocity()) < REST_EPSILON;
     }
 
+    // TODO: add equals, toString, hashCode
+
+   @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof MechanicalSystem)) {
+            return false;
+        }
+        MechanicalSystem other = (MechanicalSystem) o;
+
+        return this.getMass() == other.getMass()
+                && this.getPosition().getX() == other.getPosition().getX()
+                && this.getPosition().getY() == other.getPosition().getY()
+                && this.getVelocity().getX() == other.getVelocity().getX()
+                && this.getVelocity().getY() == other.getVelocity().getY()
+                && this.getNetForce().getX() == other.getNetForce().getX()
+                && this.getNetForce().getY() == other.getNetForce().getY();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Double.hashCode(this.getMass());
+        result = 31 * result + Double.hashCode(this.getPosition().getX());
+        result = 31 * result + Double.hashCode(this.getPosition().getY());
+        result = 31 * result + Double.hashCode(this.getVelocity().getX());
+        result = 31 * result + Double.hashCode(this.getVelocity().getY());
+        result = 31 * result + Double.hashCode(this.getNetForce().getX());
+        result = 31 * result + Double.hashCode(this.getNetForce().getY());
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "MechanicalSystem1[mass=" + this.getMass() + ", position="
+                + this.getPosition() + ", velocity=" + this.getVelocity() + ", netForce="
+                + this.getNetForce() + "]";
+    }
 
 }
